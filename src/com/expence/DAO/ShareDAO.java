@@ -1,4 +1,4 @@
-package PRIYANSHU.Expense.DAO;
+package com.expence.DAO;
 
 
 import com.expence.DAO.Database;
