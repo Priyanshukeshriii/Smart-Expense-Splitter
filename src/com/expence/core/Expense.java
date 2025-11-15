@@ -2,7 +2,7 @@ package com.expence.core;
 
 import java.time.LocalDate;
 
-public class Expence {
+public class Expense {
     private int id;
     private int groupId;
     private int PaidByMember;
@@ -57,4 +57,6 @@ public class Expence {
     public void setPaidByMember(int paidByMember) {
         PaidByMember = paidByMember;
     }
+
+
 }
