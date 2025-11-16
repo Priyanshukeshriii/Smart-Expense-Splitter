@@ -1,12 +1,12 @@
-package com.expence.DAO;
+package com.expense.DAO;
 
-import com.expence.core.Expense;
+import com.expense.core.Expense;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExpenceDAO {
+public class ExpenseDAO {
 
     public int addExpense(Expense expense) {
 

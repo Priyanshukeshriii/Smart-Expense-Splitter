@@ -1,4 +1,4 @@
-package com.expence.DAO;
+package com.expense.DAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

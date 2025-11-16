@@ -1,8 +1,7 @@
-package com.expence.DAO;
+package com.expense.DAO;
 
 
-import com.expence.DAO.Database;
-import com.expence.core.Share;
+import com.expense.core.Share;
 
 import java.sql.*;
 import java.util.ArrayList;

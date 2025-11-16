@@ -1,4 +1,4 @@
-package com.expence.core;
+package com.expense.core;
 
 public class Share {
     private int id;

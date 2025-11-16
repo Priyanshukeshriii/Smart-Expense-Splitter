@@ -1,16 +1,16 @@
-package com.expence.core;
+package com.expense.core;
 
-public class Group {
+public class Member {
     private int id;
-    private int admin_id;
+    private int groupId;
     private String name;
 
-    public int getAdmin_id() {
-        return admin_id;
+    public int getGroupId() {
+        return groupId;
     }
 
-    public void setAdmin_id(int admin_id) {
-        this.admin_id = admin_id;
+    public void setGroupId(int groupId) {
+        this.groupId = groupId;
     }
 
     public int getId() {

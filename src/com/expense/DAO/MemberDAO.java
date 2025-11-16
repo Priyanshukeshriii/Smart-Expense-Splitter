@@ -1,6 +1,6 @@
-package com.expence.DAO;
+package com.expense.DAO;
 
-import com.expence.core.Member;
+import com.expense.core.Member;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -58,7 +58,31 @@ public class MemberDAO {
 
         return list;
     }
+    public Member getMemberById(int memberId) {
 
+        String sql = "SELECT * FROM members WHERE id = ?";
+
+        try (Connection con = Database.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql)) {
+
+            ps.setInt(1, memberId);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                Member m = new Member();
+                m.setId(rs.getInt("id"));
+                m.setGroupId(rs.getInt("group_id"));
+                m.setName(rs.getString("name"));
+                return m;
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null; // member not found
+    }
 
 
     public boolean deleteMember(int groupId, int memberId) {
